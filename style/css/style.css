@@ -15,12 +15,34 @@ body * {
 	font-family: 'Open Sans';
 }
 
+::selection {
+	color: #fff;
+	background: rgba(0,0,0,0.7); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	color: #fff;
+	background: rgba(0,0,0,0.7); /* Gecko Browsers */
+}
+
 hr {
 	border: none;
 	margin: 0;
 	height: 4px;
 }
-
+.no_select {
+	-webkit-user-select: none;
+	user-select: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+img.center {
+	margin: 0 auto;
+}
+.align_center {
+	text-align: center;
+}
 /*colors shemes*/
 .backgroundWhite {
 	background-color: #fff;
@@ -33,11 +55,31 @@ hr {
     float: left;
 }
 
+.title_paragraph {
+	padding-left: 36px;
+	position: relative;
+	color: #167d79;
+}
+.bulit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: inherit;
+	font-style: normal;
+}
+
+.content {
+	line-height: 1.42em;
+}
 
 .container {
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+.banner img {
+	display: block;
 }
 
 .banner_static {
@@ -59,6 +101,18 @@ hr {
 .windowBanner {
 	color: #fff;
 	font-size: 1.5em;
+}
+.windowBanner h1 {
+	float: left;
+	padding-left: 10px;
+}
+.windowBanner *::selection {
+	color: #000;
+	background: rgba(255,255,255,0.7);
+}
+.windowBanner *::-moz-selection {
+	color: #000;
+	background: rgba(255,255,255,0.7);
 }
 .windowBanner hr {
 	opacity: .7;

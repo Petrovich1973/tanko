@@ -1,0 +1,12 @@
+@viewport {
+   user-zoom: fixed;
+}
+
+.windowBanner {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.mobile_hide {
+	display: none;
+}

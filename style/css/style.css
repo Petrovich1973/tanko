@@ -1,0 +1,46 @@
+html {
+	background-color: #000;
+}
+body * {
+	box-sizing: border-box;
+}
+
+.backgroundWhite {
+	background-color: #fff;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.banner_static {
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-image: url('../img/bg_js.jpg');
+	opacity: .4;
+}
+.windowBanner {
+	color: #fff;
+	font-size: 1.5em;
+}
+.windowBanner ul {
+	margin: 0;
+	padding: 0;
+	list-style: square;
+}
+.windowBanner ul li {
+	margin-bottom: 1.15em;
+	font-size: .76em
+}

@@ -1,13 +1,38 @@
 html {
 	background-color: #000;
 }
+
+body {
+	opacity: 0;
+	-webkit-transition: all 3s;
+	transition: all 3s;
+}
+body.visible {
+	opacity: 1;
+}
 body * {
 	box-sizing: border-box;
+	font-family: 'Open Sans';
 }
 
+hr {
+	border: none;
+	margin: 0;
+	height: 4px;
+}
+
+/*colors shemes*/
 .backgroundWhite {
 	background-color: #fff;
 }
+
+
+.icon_main {
+    font-size: 2em !important;
+    margin: 0.67em 0;
+    float: left;
+}
+
 
 .container {
 	max-width: 980px;
@@ -35,6 +60,10 @@ body * {
 	color: #fff;
 	font-size: 1.5em;
 }
+.windowBanner hr {
+	opacity: .7;
+	height: 6px;
+}
 .windowBanner ul {
 	margin: 0;
 	padding: 0;
@@ -43,4 +72,41 @@ body * {
 .windowBanner ul li {
 	margin-bottom: 1.15em;
 	font-size: .76em
+}
+   
+/*.adminheader:before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	content: "\f007";
+}*/
+
+
+.cell_2 > * {
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+}
+.cell_2 > *:first-child {
+	padding-left: 0;
+}
+.cell_2 > *:last-child {
+	padding-right: 0;
+}
+
+.cell_2:after,
+.cell_3:after,
+.cell_4:after,
+.cell_5:after,
+.cell_6:after,
+.cell_7:after,
+.cell_8:after,
+.clear {
+	display: block;
+	content: "";
+	clear: both;
 }
